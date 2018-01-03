@@ -1,1 +1,80 @@
-*
+# IDEA Ignores #
+################
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+local.properties
+
+# Modules and Caches
+###########################
+.sublime-gulp.cache
+.sass-cache
+.tmp
+node_modules
+bower_components
+
+# Built Application Files
+###########################
+*.apk
+*.ap_
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+
+# Logs and databases #
+######################
+log/
+*.log
+*.sql
+*.sqlite
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# VCS #
+#######
+.svn
+.svn/
+CVS
+
+# XCode 4 #
+###########
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+thumbs.db
+Desktop.ini
+# REMINDER: do not edit Icon^M^M Carriage Returns
+Icon[
+]
+#REMINDER*
