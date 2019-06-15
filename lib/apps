@@ -3,18 +3,12 @@
 # Install native apps
 run_apps() {
 	# utils
-	brew cask install spotify	
-	brew cask install transmission
-	brew cask install vlc
-	brew cask install whatsapp
-	brew cask install telegram
+	utils=(spotify transmission vlc whatsapp telegram slack)
 
 	# dev
-	brew cask install cyberduck
-	brew cask install docker
-	brew cask install github
-	brew cask install google-chrome
-	brew cask install iterm2
-	brew cask install postman
-	brew cask install visual-studio-code
+	dev=(cyberduck docker github google-chrome iterm2 postman visual-studio-code)
+	
+	for p in "${utils[@]} ${dev[@]}"; do
+		brew cask install $p
+	done
 }
