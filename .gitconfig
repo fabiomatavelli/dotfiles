@@ -1,5 +1,10 @@
 [user]
-    name = Fábio Matavelli
-    email = fabiomatavelli@gmail.com
+	name = Fábio Matavelli
+	email = fabiomatavelli@gmail.com
 [credential]
     helper = osxkeychain
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
