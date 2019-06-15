@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+# Install command-line tools using Homebrew
+run_brew() {
+
+	# Make sure we’re using the latest Homebrew
+	brew update
+
+	# Taps
+	brew tap homebrew/services
+	brew tap homebrew/cask-fonts
+
+	# Install GNU core utilities (those that come with OS X are outdated)
+	brew install coreutils
+
+	# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+	brew install findutils
+	brew install ngrep
+
+	# Install Bash 4
+	brew install bash
+
+	# Completions
+	brew install bash-completion2 brew-cask-completion gem-completion docker-completion launchctl-completion wpcli-completion yarn-completion
+
+	# Install more recent versions of some OS X tools
+	brew install vim
+	brew install grep
+	brew install screen
+
+	# Databases
+	brew install mariadb
+
+	# Python
+	brew install python3
+
+	# Ruby
+	brew install ruby
+
+	# Node
+	brew install node
+	brew install nvm
+
+	# Git and tools
+	brew install git
+	brew install git-lfs
+	brew install tig
+	brew install git-extras
+
+	# Docker tools
+	brew install docker docker-machine docker-clean
+
+	# Install useful binaries
+	brew install ack
+	#brew install android-platform-tools
+	brew install awscli
+	brew install certbot
+	brew install fasd
+	brew install geoip
+	brew install geoipupdate
+	brew install gpg
+	brew install htop
+	brew install httpie
+	brew install imagemagick
+	brew install jq
+	brew install lame
+	brew install rename
+	brew install speedtest-cli
+	brew install thefuck
+	brew install tree
+	brew install watchman
+	brew install wget
+
+	# Remove outdated versions from the cellar
+	brew cleanup
+}

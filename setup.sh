@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-libs=(apps fonts)
+libs=(apps brew fonts)
 
 source ./lib/utils
 # Source the necessary files and helper scripts
@@ -41,6 +41,9 @@ if ! type_exists 'brew'; then
     e_process "Installing Homebrew..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
+e_process "Installing Homebrew packages"
+run_brew
 
 # Ask installing OS X Applications?
 seek_confirmation "Do you want to install Mac OS X Apps and stuff"
