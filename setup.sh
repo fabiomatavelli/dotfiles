@@ -52,6 +52,10 @@ if is_confirmed; then
 
     e_process "Installing Mac OS X fonts"
     run_fonts
+
+    e_success "All Mac OS X Applications have been installed"
+
+    e_warning "Please consider using cask commands for Updating/Upgrading or Uninstalling a Mac OS X Application"
 fi
 
 e_success "Your Mac is ready to rock!"
