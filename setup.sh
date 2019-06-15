@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-libs=(apps brew fonts)
+libs=(apps brew dotfiles fonts)
 
 source ./lib/utils
 # Source the necessary files and helper scripts
@@ -45,6 +45,20 @@ fi
 e_process "Installing Homebrew packages"
 run_brew
 
+# Ask before potentially overwriting files
+seek_confirmation "Overwrite your existing dotfiles"
+
+if is_confirmed; then
+    # Symlink all necessary files
+
+    run_dotfiles
+
+    e_success "All files have been symlinked"
+
+else
+    e_error "This step is required.  When you're ready, run this script to start up again"
+fi
+
 # Ask installing OS X Applications?
 seek_confirmation "Do you want to install Mac OS X Apps and stuff"
 
@@ -70,9 +84,9 @@ if is_confirmed; then
     # Install zsh
 	brew install zsh
     if ! type_exists "zsh"; then
-	    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	    chsh -s $(which zsh)
-    fi
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	chsh -s $(which zsh)
+fi
 fi
 
 e_success "Your Mac is ready to rock!"

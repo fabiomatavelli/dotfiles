@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+dotfiles=(.gitattributes .gitconfig .gitignore .osx)
+
+# Install dotfiles
+run_dotfiles() {
+	for i in "${dotfiles[@]}"; do
+		if [[ "$i" == ".gitconfig" && -f ~/.gitconfig && "$USER" != "fabiomatavelli" ]]; then
+			e_warning ".gitconfig already exists, do it manually"
+		else
+			rm -rf ~/$i
+			ln -s .dotfiles/$i ~
+		fi
+	done
+
+	source ~/.bash_profile
+}

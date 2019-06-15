@@ -9,9 +9,9 @@ local.properties
 
 # Modules and Caches
 ###########################
-.sublime-gulp.cache
 .sass-cache
 .tmp
+.vscode
 node_modules
 bower_components
 
@@ -67,6 +67,9 @@ xcuserdata/
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Sensitive data
+.npmrc
 
 # OS generated files #
 ######################

@@ -1,12 +1,5 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-#	name = Fábio Matavelli
-#	email = fabiomatavelli@Fabios-Mac-mini.local
-	name = Fábio Matavelli
-	email = fabiomatavelli@gmail.com
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+    name = Fábio Matavelli
+    email = fabiomatavelli@gmail.com
+[credential]
+    helper = osxkeychain
