@@ -102,3 +102,4 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=~/Go
 export PATH=$PATH:$GOPATH/bin
+export DEFAULT_USER=$(whoami)
