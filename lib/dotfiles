@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dotfiles=(.gitattributes .gitconfig .gitignore .osx .zshrc)
+dotfiles=(.gitattributes .gitconfig .gitignore .osx .zshrc .vscode)
 
 # Install dotfiles
 run_dotfiles() {
@@ -13,5 +13,13 @@ run_dotfiles() {
 		fi
 	done
 
+	if [ ! -d ~/Library/Application\ Support/Code/User ]; then
+		mkdir -p ~/Library/Application\ Support/Code/User
+	fi
+
+	if [ ! -f ~/Library/Application\ Support/Code/User/settings.json ]; then
+		ln -s ~/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+	fi
+	
 	source ~/.bash_profile
 }
