@@ -100,6 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # added by travis gem
 [ -f /Users/fabiomatavelli/.travis/travis.sh ] && source /Users/fabiomatavelli/.travis/travis.sh
 
-export GOPATH=~/Projects
+export GOPATH=~/Go
 export PATH=$PATH:$GOPATH/bin
-eval "$(rbenv init -)"
