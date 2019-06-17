@@ -84,7 +84,7 @@ if is_confirmed; then
     # Install zsh
 	brew install zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	chsh -s $(which zsh)
+	chsh -s /bin/zsh
 fi
 
 e_success "Your Mac is ready to rock!"
