@@ -87,4 +87,8 @@ if is_confirmed; then
 	chsh -s /bin/zsh
 fi
 
+if [ ! -d ~/Projects ]; then
+    mkdir ~/Projects
+fi
+
 e_success "Your Mac is ready to rock!"
