@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dotfiles=(.gitattributes .gitconfig .gitignore .osx)
+dotfiles=(.gitattributes .gitconfig .gitignore .osx .zshrc)
 
 # Install dotfiles
 run_dotfiles() {
