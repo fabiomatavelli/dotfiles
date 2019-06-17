@@ -10,4 +10,5 @@ run_fonts() {
 	brew cask install font-inconsolata
 	brew cask install font-inconsolata-dz
 	brew cask install font-ubuntu
+	brew cask install font-meslo-nerd-font
 }
