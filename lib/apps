@@ -3,7 +3,7 @@
 # Install native apps
 run_apps() {
 	# utils
-	utils=(spotify transmission vlc whatsapp telegram slack)
+	utils=(1password spotify transmission vlc whatsapp telegram slack)
 
 	# dev
 	dev=(cyberduck docker github google-chrome iterm2 postman visual-studio-code)
