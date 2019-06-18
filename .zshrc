@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # added by travis gem
 [ -f /Users/fabiomatavelli/.travis/travis.sh ] && source /Users/fabiomatavelli/.travis/travis.sh
 
+eval $(thefuck --alias)
+
 export GOPATH=~/Go
 export PATH=$PATH:$GOPATH/bin
 export DEFAULT_USER=$(whoami)
