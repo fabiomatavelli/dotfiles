@@ -32,7 +32,7 @@ run_brew() {
 	brew install mariadb
 
 	# Python
-	brew install python3
+	#sbrew install python3
 	brew install pyenv
 
 	# Ruby
