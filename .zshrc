@@ -105,3 +105,4 @@ eval $(thefuck --alias)
 export GOPATH=~/Go
 export PATH=$GOPATH/bin:$(pyenv root)/shims:$PATH
 export DEFAULT_USER=$(whoami)
+eval "$(pyenv init -)"
