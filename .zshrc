@@ -103,5 +103,5 @@ source $ZSH/oh-my-zsh.sh
 eval $(thefuck --alias)
 
 export GOPATH=~/Go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$(pyenv root)/shims
 export DEFAULT_USER=$(whoami)
