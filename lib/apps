@@ -6,7 +6,7 @@ run_apps() {
 	utils=(1password spotify transmission vlc whatsapp telegram slack)
 
 	# dev
-	dev=(cyberduck docker github google-chrome iterm2 postman visual-studio-code)
+	dev=(cyberduck docker github google-chrome firefox iterm2 postman visual-studio-code)
 	
 	for p in "${utils[@]} ${dev[@]}"; do
 		brew cask install $p
