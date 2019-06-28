@@ -97,6 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ls="ls -lha"
+
 # added by travis gem
 [ -f /Users/fabiomatavelli/.travis/travis.sh ] && source /Users/fabiomatavelli/.travis/travis.sh
 
