@@ -15,7 +15,10 @@
     "terminal.external.osxExec": "iTerm2.app",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "workbench.colorTheme": "Better Solarized Dark",
-    "python.venvPath": "~/.local/share/virtualenvs"
+    "python.venvPath": "~/.local/share/virtualenvs",
+    "python.testing.pyTestArgs": [
+      "--verbose"
+    ],
     "terraform.format": {
       "ignoreExtensionsOnSave": [
         ".tfsmurf"
