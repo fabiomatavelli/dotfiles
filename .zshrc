@@ -105,6 +105,7 @@ alias ls="ls -lha"
 export GOPATH=~/Go
 export PATH=$GOPATH/bin:$(pyenv root)/shims:$PATH
 export DEFAULT_USER=$(whoami)
+export GPG_TTY=$(tty)
 
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
