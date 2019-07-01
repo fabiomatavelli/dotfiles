@@ -1,30 +1,32 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000,
-    "editor.tabSize": 2,
-    "git.autofetch": true,
-    "terminal.integrated.fontFamily": "'Meslo LG S for Powerline', 'Source Code Pro for Powerline'",
-    "go.testFlags": [
-      "-cover",
-      "-v"
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "terminal.integrated.fontFamily": "'Meslo LG S for Powerline', 'Source Code Pro for Powerline'",
+  "go.testFlags": [
+    "-cover",
+    "-v"
+  ],
+  "git.confirmSync": false,
+  "window.zoomLevel": 0,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "terminal.external.osxExec": "iTerm2.app",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.colorTheme": "Better Solarized Dark",
+  "python.venvPath": "~/.local/share/virtualenvs",
+  "python.testing.pyTestArgs": [
+    "--verbose"
+  ],
+  "terraform.format": {
+    "ignoreExtensionsOnSave": [
+      ".tfsmurf"
     ],
-    "git.confirmSync": false,
-    "window.zoomLevel": 0,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "terminal.external.osxExec": "iTerm2.app",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "workbench.colorTheme": "Better Solarized Dark",
-    "python.venvPath": "~/.local/share/virtualenvs",
-    "python.testing.pyTestArgs": [
-      "--verbose"
-    ],
-    "terraform.format": {
-      "ignoreExtensionsOnSave": [
-        ".tfsmurf"
-      ],
-      "formatOnSave": true,
-      "enable": true
-    },
-    "editor.formatOnSave": true
-  }
+    "formatOnSave": true,
+    "enable": true
+  },
+  "editor.formatOnSave": true,
+  "terraform.lintConfig": null,
+  "terraform.lintPath": "/usr/local/bin/tflint"
+}
