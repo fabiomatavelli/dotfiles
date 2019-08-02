@@ -77,6 +77,7 @@ run_brew() {
 	brew install tree
 	brew install watchman
 	brew install wget
+	brew cask install menumeters
 
 	# Remove outdated versions from the cellar
 	brew cleanup
