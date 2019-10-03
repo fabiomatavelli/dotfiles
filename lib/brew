@@ -35,6 +35,9 @@ run_brew() {
 	#sbrew install python3
 	brew install pyenv
 
+	# Go
+	brew install go
+
 	# Ruby
 	brew install ruby
 
@@ -44,7 +47,7 @@ run_brew() {
 
 	# Terraform
 	brew install terraform
-
+	
 	# Git and tools
 	brew install git
 	brew install git-lfs
